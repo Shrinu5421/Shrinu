@@ -114,7 +114,7 @@ nav {
   min-height:100vh;
   display:grid; grid-template-columns:1fr 440px; gap:3rem;
   align-items:center;
-  padding:7rem 3rem 4rem;
+  padding:7rem 3rem 3rem;
   max-width:1200px; margin:0 auto;
 }
 
@@ -203,9 +203,9 @@ nav {
 /* ════════════════════════════
    SECTIONS
 ════════════════════════════ */
-.s-wrap{padding:5rem 3rem; max-width:1200px; margin:0 auto}
-.s-alt{background:var(--bg2)}
-.s-alt .s-inner{max-width:1200px;margin:0 auto;padding:5rem 3rem}
+.s-wrap{padding:4.5rem 3rem; max-width:1200px; margin:0 auto}
+.s-alt{background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border)}
+.s-alt .s-inner{max-width:1200px;margin:0 auto;padding:4.5rem 3rem}
 .s-label{
   font-family:"DM Mono",monospace; font-size:.66rem; letter-spacing:.25em;
   color:var(--cyan); text-transform:uppercase; margin-bottom:.5rem;
@@ -214,7 +214,7 @@ nav {
   font-family:"Syne",sans-serif; font-weight:700;
   font-size:clamp(1.6rem,2.6vw,2.2rem); margin-bottom:2.5rem; color:var(--ink);
 }
-.divider{height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.divider{display:none}
 
 /* ════════════════════════════
    EXPERIENCE
@@ -402,8 +402,8 @@ footer{
 ════════════════════════════ */
 @media(max-width:1024px){
   .hero{grid-template-columns:1fr 380px;gap:2rem;padding:7rem 2rem 4rem}
-  .s-wrap{padding:4rem 2rem}
-  .s-alt .s-inner{padding:4rem 2rem}
+  .s-wrap{padding:3.5rem 2rem}
+  .s-alt .s-inner{padding:3.5rem 2rem}
   nav{padding:0 2rem}
 }
 
@@ -420,7 +420,7 @@ footer{
   .hero{
     grid-template-columns:1fr;
     grid-template-rows:auto auto;
-    padding:5.5rem 1.5rem 3rem;
+    padding:5rem 1.5rem 2.5rem;
     gap:2rem;
     text-align:center;
     min-height:auto;
@@ -439,8 +439,8 @@ footer{
   .kpi-lbl{font-size:.52rem}
 
   /* Sections */
-  .s-wrap{padding:3.5rem 1.5rem}
-  .s-alt .s-inner{padding:3.5rem 1.5rem}
+  .s-wrap{padding:3rem 1.5rem}
+  .s-alt .s-inner{padding:3rem 1.5rem}
 
   /* Experience — stack meta on top */
   .exp-card{grid-template-columns:1fr}
@@ -493,7 +493,7 @@ footer{
 </div>
 
 <!-- ══ HERO ══ -->
-<section style="background:var(--bg)">
+<section style="background:var(--bg);padding-bottom:0">
   <div class="hero">
     <!-- LEFT: text -->
     <div class="hero-left">
@@ -534,7 +534,6 @@ footer{
   </div>
 </section>
 
-<div class="divider"></div>
 
 <!-- ══ EXPERIENCE ══ -->
 <section id="experience">
@@ -594,7 +593,6 @@ footer{
   </div>
 </section>
 
-<div class="divider"></div>
 
 <!-- ══ PROJECTS ══ -->
 <div class="s-alt" id="projects">
@@ -647,7 +645,6 @@ footer{
   </div>
 </div>
 
-<div class="divider"></div>
 
 <!-- ══ SKILLS ══ -->
 <section id="skills">
@@ -716,7 +713,6 @@ footer{
   </div>
 </section>
 
-<div class="divider"></div>
 
 <!-- ══ EDUCATION ══ -->
 <div class="s-alt" id="education">
@@ -746,7 +742,6 @@ footer{
   </div>
 </div>
 
-<div class="divider"></div>
 
 <!-- ══ ACHIEVEMENTS ══ -->
 <section id="achievements">
@@ -774,7 +769,6 @@ footer{
   </div>
 </section>
 
-<div class="divider"></div>
 
 <!-- ══ PUBLICATIONS ══ -->
 <div class="s-alt" id="publications">
@@ -800,7 +794,6 @@ footer{
   </div>
 </div>
 
-<div class="divider"></div>
 
 <!-- ══ CONTACT ══ -->
 <section id="contact">
